@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Inseridos</title>
+    <link rel="stylesheet" href="assets/acesso-privado.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Livros Inseridos</h1>
+
+        <!-- Barra de pesquisa -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Pesquisar livro..." onkeyup="filterBooks()">
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Livros</th>
+                        <th>Usuários</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="livros-lista">
+                    <!-- Livros serão inseridos aqui dinamicamente -->
+                </tbody>
+            </table>
+
+            <!-- Botões reorganizados em uma área própria -->
+            <div class="button-container">
+                <button type="button" onclick="window.location.href='/inserir-livros'">Inserir Livro</button>
+                <button type="button" onclick="window.location.href='/login'">Deslogar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/acesso-privado.js"></script>
+</body>
+
+</html>

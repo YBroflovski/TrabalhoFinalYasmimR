@@ -1,0 +1,121 @@
+/* Estilo global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo da tabela */
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Borda cinza claro */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #333; /* Texto preto */
+}
+
+th {
+    background-color: #f8f8f8; /* Fundo cinza claro */
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fundo mais claro */
+}
+
+/* Estilo dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul escuro */
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

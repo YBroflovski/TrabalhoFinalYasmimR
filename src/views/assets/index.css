@@ -1,0 +1,133 @@
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Fundo claro */
+    color: #333333; /* Texto escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    background-color: #FFFFFF; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; /* Texto escuro */
+}
+
+/* Estilo do formulário */
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #666666; /* Cinza claro */
+    font-weight: bold;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #CCCCCC; /* Borda clara */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #F0F0F0; /* Fundo claro */
+    color: #333333; /* Texto escuro */
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #6200EE; /* Roxo escuro */
+    background-color: #FFFFFF; /* Fundo branco */
+}
+
+/* Estilo dos botões */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #6200EE; /* Roxo escuro */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3700B3; /* Roxo mais escuro */
+}
+
+button:disabled {
+    background-color: #B0B0B0; /* Cinza claro */
+    cursor: not-allowed;
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    background-color: #03DAC6; /* Verde */
+    color: #FFFFFF; /* Texto branco */
+}
+
+.back-button:hover {
+    background-color: #00BFA5; /* Verde escuro */
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #333333; /* Texto escuro */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #888; /* Cinza claro */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333333; /* Texto escuro */
+    text-decoration: none;
+    cursor: pointer;
+}

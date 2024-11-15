@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Novo Livro</title>
+    <link rel="stylesheet" href="assets/inserir-livros.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inserir Novo Livro</h1>
+        <form action="/inserir-livros" method="POST">
+            <label for="livro">Nome do Livro:</label>
+            <input type="text" id="livro" name="livro" required>
+            <button type="submit">Inserir</button>
+        </form>
+        <button id="backButton" onclick="window.location.href='/acesso-privado.html'">Voltar</button>
+    </div>
+</body>
+</html>
+<!-- >
